@@ -5,9 +5,12 @@ public class Hand {
 
     public static String getHandName(int hand) {
         String handName = "";
-        if (hand == GU) handName = "�O�[";
-        else if (hand == CHOKI) handName = "�`���L";
-        else if (hand == PA) handName = "�p�[";
+
+        //課題2(bot) Playerの手の決定とその表示
+        //1ならば"グー",2ならば"チョキ",3ならば"パー"を返す
+        if (hand == GU) handName = "グー";
+        else if (hand == CHOKI) handName = "チョキ";
+        else if (hand == PA) handName = "パー";
         return handName;
     }
 }
